@@ -7,6 +7,7 @@ def solve(cadena):
     elif len(cadena) == 1:
         return cadena
     elif len(cadena) > 1:
+        """Replace semicolon and ampersand by comma"""
         cadena = cadena.replace(":",",")
         cadena = cadena.replace("&",",")
         numbers = cadena.split(',')
