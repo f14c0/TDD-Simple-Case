@@ -14,6 +14,11 @@ class TestSolver(unittest.TestCase):
     cadena = "1"
     self.assertEqual(Solver.solve(cadena),cadena)
 
+  def test_two_or_more_numbers_string(self):
+    """Test the solver with a string of two or more numbers separated by comma"""
+    cadena="1,4,9,0,4,5"
+    respuesta_esperada=5
+    self.assertEqual(Solver.solve(cadena),respuesta_esperada)
 
 
 
