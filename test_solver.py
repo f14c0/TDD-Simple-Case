@@ -20,6 +20,11 @@ class TestSolver(unittest.TestCase):
     respuesta_esperada=5
     self.assertEqual(Solver.solve(cadena),respuesta_esperada)
 
+  def test_two_or_more_numbers_string_other_separator(self):
+    """Test the solver with a string of two or more numbers separated by comma, ampersand or colon"""
+    cadena = "1:6&9"
+    respuesta_esperada=7
+    self.assertEqual(Solver.solve(cadena),respuesta_esperada)
 
 
 
